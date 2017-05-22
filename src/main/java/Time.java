@@ -8,6 +8,20 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
+=============================
+KWALITEITS COMMENTAAR
+=============================
+0. Voeg commentaar toe - IntelliJ typ '/**' en dan ram op enter; Doe dit voor elke functie en de clas beschrvijging
+1. Zet erbij waar de class voor is.
+2. Zet boven elke functie commentaar waar de functie voor bedoeld is
+    - Hierbij komt waar elke parameter voor is als de functie deze heeft
+    - Hierbij komt waar de return type voor is
+3. Zet duidelijke methode namen neer die slaan op wat de methode doet
+4. Hou het SRP in de gaten. Elke methode heeft zijn eigen verantwoordelijkheid. Net zo als elke klasse dat heeft.
+    - SRP (Single Responsibility Design)
+*/
+
+/**
  * Created by rickb on 11-5-2017.
  */
 public class Time {
