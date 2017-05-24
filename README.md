@@ -9,20 +9,20 @@ https://www.jetbrains.com/help/idea/2017.1/creating-and-running-your-first-web-a
 
 # Examples
 
-connect to the application(should start when you run the application): 
-{ip_cluster}:{port_api}/
-http://localhost:8080/
+connect to the application(should start when you run the application): <br>
+{ip_cluster}:{port_api}/<br>
+http://localhost:8080/<br>
 
-to get the default time
-{ip_cluster}:{poort_api}/time 
-http://localhost:8080/time
+to get the default time<br>
+{ip_cluster}:{poort_api}/time<br> 
+http://localhost:8080/time<br>
 
-to get the time of a specific time zone
-{ip_cluster}:{port_api}/time/{Continent}/{Area} 
-http://localhost:8080/<strong>time/Asia/Seoul</strong>
+to get the time of a specific time zone<br>
+{ip_cluster}:{port_api}/time/{Continent}/{Area}<br> 
+http://localhost:8080/<strong>time/Asia/Seoul</strong><br>
 
-OR
+OR<br>
 
-http://localhost:8080/<strong>time/Etc/GMT+5</strong>
+http://localhost:8080/<strong>time/Etc/GMT+5</strong><br>
 
-a list of all supported time zones: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+a list of all supported time zones: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones<br>
