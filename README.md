@@ -26,3 +26,17 @@ OR<br>
 http://localhost:8080/<strong>time/Etc/GMT+5</strong><br>
 
 a list of all supported time zones: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones<br>
+
+<b>JSON feed example</b>
+<code>{<br>
+"dateTime":[<br>
+{<br>
+"hour":"21",<br>
+"minute":"37",<br>
+"second":"36",<br>
+"day":"WEDNESDAY",<br>
+"day_of_month":"24",<br>
+"month":"5",<br>
+"year":"2017"}<br>
+]<br>
+}<br>
