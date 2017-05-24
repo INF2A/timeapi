@@ -41,3 +41,11 @@ a list of all supported time zones: https://en.wikipedia.org/wiki/List_of_tz_dat
 ]<br>
 }<br>
 
+# Cluster
+
+more information about the cluster: https://github.com/INF2A/RPI-docker-cluster
+
+# SmartMirror
+
+more information about the SmartMirror: https://github.com/INF2A/Smart-mirror
+
