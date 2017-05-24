@@ -27,8 +27,8 @@ http://localhost:8080/<strong>time/Etc/GMT+5</strong><br>
 
 a list of all supported time zones: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones<br>
 
-<b>JSON feed example</b>
-<code>{<br>
+<b>JSON feed example</b><br>
+{<br>
 "dateTime":[<br>
 {<br>
 "hour":"21",<br>
@@ -40,4 +40,4 @@ a list of all supported time zones: https://en.wikipedia.org/wiki/List_of_tz_dat
 "year":"2017"}<br>
 ]<br>
 }<br>
-</code>
+
