@@ -9,15 +9,15 @@ https://www.jetbrains.com/help/idea/2017.1/creating-and-running-your-first-web-a
 
 # Examples
 
-connect to the application(should start when you run the application): <br>
+<b>connect to the application(should start when you run the application):</b><br>
 {ip_cluster}:{port_api}/<br>
 http://localhost:8080/<br>
 
-to get the default time<br>
+<b>to get the default time</b><br>
 {ip_cluster}:{poort_api}/time<br> 
 http://localhost:8080/time<br>
 
-to get the time of a specific time zone<br>
+<b>to get the time of a specific time zone</b><br>
 {ip_cluster}:{port_api}/time/{Continent}/{Area}<br> 
 http://localhost:8080/<strong>time/Asia/Seoul</strong><br>
 
