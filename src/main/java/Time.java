@@ -47,7 +47,7 @@ public class Time {
         int month =now.getMonthValue();//store current month (int)
         int year = now.getYear();//store current year (int)
         //set the time string to a json format, containing the values set earlier.
-        time = "{\n\"dateTime\":[\n{" +
+        time = "{\n\"dateTime\":\n{" +
                 "\n\"hour\":" + "\"" +hour + "\"," +
                 "\n\"minute\":"+ "\""+ minute + "\"," +
                 "\n\"second\":"+ "\""+ second + "\"," +
@@ -55,7 +55,7 @@ public class Time {
                 "\n\"day_of_month\":" + "\"" + dayofMonth + "\","+
                 "\n\"month\":" + "\"" + month + "\","+
                 "\n\"year\":" +"\"" + year + "\"                "+
-                "}\n]\n}";
+                "}\n}\n";
         return time;//return the time string
     }
 
@@ -77,7 +77,7 @@ public class Time {
         int month =current.getMonthValue();//store the current month,according to the continent and place(int)
         int year = current.getYear();//store the current year, according to the continent and place(int)
         //set the time string to a json format, containing the values set earlier.
-        time = "{\n\"dateTime\":[\n{" +
+        time = "{\n\"dateTime\":{" +
                 "\n\"hour\":" + "\"" +hour + "\"," +
                 "\n\"minute\":"+ "\""+ minute + "\"," +
                 "\n\"second\":"+ "\""+ second + "\"," +
@@ -85,7 +85,7 @@ public class Time {
                 "\n\"day_of_month\":" + "\"" + dayofMonth + "\","+
                 "\n\"month\":" + "\"" + month + "\","+
                 "\n\"year\":" +"\"" + year + "\""+
-                "}\n]\n}";
+                "}\n}";
         return time;//return the time string
     }
 }
