@@ -35,22 +35,27 @@ public class Time {
 
     public String getCurrentDate()
     {
-
+        String second_;
+        String minute_;
+        String hour_;
         String time;
         LocalDateTime now = LocalDateTime.now(); // store the current date time (LocatDateTime)
 
         DayOfWeek day = now.getDayOfWeek(); // store the current day(DayOfWeek)
         int hour = now.getHour(); // store the current hour(int)
+        hour_=addZero(hour);
         int minute = now.getMinute();//store the current minute (int)
-        int second = now.getSecond();//store the current second (int)
+        minute_=addZero(minute);
+        long second = now.getSecond();//store the current second (int)
+        second_=addZero(second);
         int dayofMonth = now.getDayOfMonth();//store current day of month (int)
         int month =now.getMonthValue();//store current month (int)
         int year = now.getYear();//store current year (int)
         //set the time string to a json format, containing the values set earlier.
         time = "{\n\"dateTime\":\n{" +
-                "\n\"hour\":" + "\"" +hour + "\"," +
-                "\n\"minute\":"+ "\""+ minute + "\"," +
-                "\n\"second\":"+ "\""+ second + "\"," +
+                "\n\"hour\":" + "\"" +hour_ + "\"," +
+                "\n\"minute\":"+ "\""+ minute_ + "\"," +
+                "\n\"second\":"+ "\""+ second_ + "\"," +
                 "\n\"day\":" + "\"" + day.name() + "\","+
                 "\n\"day_of_month\":" + "\"" + dayofMonth + "\","+
                 "\n\"month\":" + "\"" + month + "\","+
@@ -67,25 +72,45 @@ public class Time {
      */
     public String getCurrentDateWithTimeZone(String continent, String place)
     {
+        String second_;
+        String minute_;
+        String hour_;
+
         String time;//initialize the String time
         LocalDateTime current = LocalDateTime.MAX.now(ZoneId.of(continent+"/"+place));//store the current date time, according to the continent and place
         DayOfWeek day = current.getDayOfWeek();//store the current day, according to the continent and place
         int hour = current.getHour();//store the current hour, according to the continent and place(int)
+        hour_ = addZero(hour);
         int minute = current.getMinute();//store the current minute, according to the continent and place(int)
+        minute_ = addZero(minute);
         int second = current.getSecond();//store the current second, according to the continent and place(int)
+        second_=addZero(second);
         int dayofMonth = current.getDayOfMonth();//store the current day of the month, according to the continent and place(int)
         int month =current.getMonthValue();//store the current month,according to the continent and place(int)
         int year = current.getYear();//store the current year, according to the continent and place(int)
         //set the time string to a json format, containing the values set earlier.
         time = "{\n\"dateTime\":{" +
-                "\n\"hour\":" + "\"" +hour + "\"," +
-                "\n\"minute\":"+ "\""+ minute + "\"," +
-                "\n\"second\":"+ "\""+ second + "\"," +
+                "\n\"hour\":" + "\"" +hour_ + "\"," +
+                "\n\"minute\":"+ "\""+ minute_ + "\"," +
+                "\n\"second\":"+ "\""+ second_ + "\"," +
                 "\n\"day\":" + "\"" + day.name() + "\","+
                 "\n\"day_of_month\":" + "\"" + dayofMonth + "\","+
                 "\n\"month\":" + "\"" + month + "\","+
                 "\n\"year\":" +"\"" + year + "\""+
                 "}\n}";
         return time;//return the time string
+    }
+
+    private String addZero(long toParse)
+    {
+        String parsed;
+        if(toParse >=0 &&  toParse<10){
+            parsed = "0" + toParse;
+        }
+        else
+        {
+            parsed = Long.toString(toParse);
+        }
+        return parsed;
     }
 }
